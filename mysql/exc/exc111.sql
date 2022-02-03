@@ -1,3 +1,15 @@
+use world;
+
+create table cafe(
+	seq int primary key,
+    store varchar(50),
+    table_Num int,
+    chair_Num int,
+    address varchar(100),
+    location varchar(100),
+    ceo varchar(50)
+);
+
 insert into cafe(
 seq,
 store,
@@ -182,5 +194,17 @@ seq
 , '누누누'
 );
 select * from cafe;
+
+create table book(
+	seq int primary key not null,
+    title varchar(50),
+    publisher varchar(50),
+    author varchar(50),
+    price int
+);
+
+
+commit;
+
 
 
